@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: rgba(31, 26, 59, 0.74);
+  font-family: "Istok Web", sans-serif;
+}
+
+.textSecondary {
+  color: #ff7acc;
+}
+
+.textPrimary {
+  color: white;
+}
+
+/*
+.tabs div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tabs div a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+ */
+
+.tabs div a.active {
+  color: white;
+  font-weight: bold;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 20px;
+}
+ */
+
+.tabs {
+  list-style: none;
+}
+
+.tabs a {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding-right: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 10px;
+    border-radius: 8px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .tabs div a.active {
+    color: #827e7e;
+  }
+}
