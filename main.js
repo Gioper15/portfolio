@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `Email: ${email}%0A` +
       `Messaggio:%0A${encodeURIComponent(messaggio)}`;
 
-    const mailtoLink = `mailto:destinatario@example.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:giorgiaperone2000@gmail.com?subject=${encodeURIComponent(
       oggetto
     )}&body=${body}`;
     window.location.href = mailtoLink;
