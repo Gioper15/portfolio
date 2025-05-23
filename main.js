@@ -1,3 +1,9 @@
+if (location.hostname.includes("github.io")) {
+  const base = document.createElement("base");
+  base.href = "/portfolio/";
+  document.head.appendChild(base);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".tabs div a");
   const currentPath = window.location.pathname;
