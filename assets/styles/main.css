@@ -1,51 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --color-background: rgba(31, 26, 59, 0.74);
+  --color-primary: white;
+  --color-secondary: #ff7acc;
+  --color-hover: #827e7e;
+}
+
 body {
-  background-color: rgba(31, 26, 59, 0.74);
+  background-color: var(--color-background);
   font-family: "Istok Web", sans-serif;
 }
 
 .textSecondary {
-  color: #ff7acc;
+  color: var(--color-secondary);
 }
 
 .textPrimary {
-  color: white;
+  color: var(--color-primary);
 }
-
-/*
-.tabs div {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.tabs div a {
-  text-decoration: none;
-  padding: 10px 15px;
-  color: #333;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-}
- */
 
 .tabs div a.active {
-  color: white;
+  color: var(--color-primary);
   font-weight: bold;
 }
-
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #333;
-  color: white;
-}
-
-.navbar .logo {
-  font-size: 20px;
-}
- */
 
 .tabs {
   list-style: none;
@@ -59,7 +37,7 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: var(--color-primary);
   padding-right: 1rem;
 }
 
@@ -71,7 +49,7 @@ body {
     top: 100px;
     right: 10px;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--color-primary);
     padding: 50px 10px;
     border-radius: 8px;
     width: 95%;
@@ -88,6 +66,6 @@ body {
   }
 
   .tabs div a.active {
-    color: #827e7e;
+    color: var(--color-hover);
   }
 }
